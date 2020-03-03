@@ -1,0 +1,6 @@
+PROJECT_NAME            = timestamp
+
+INPUT                   =
+INCLUDE_PATH            = 
+
+@INCLUDE                = ../../designer/DoxygenConfigGeneric
