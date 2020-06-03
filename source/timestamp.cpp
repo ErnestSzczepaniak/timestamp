@@ -100,6 +100,16 @@ const Time & Time::operator-=(const Time & time)
 	return *this;
 }
 
+unsigned int Time::seconds()
+{
+	return _seconds;
+}
+
+unsigned int Time::miliseconds()
+{
+	return _miliseconds;
+}
+
 void Time::_set(int seconds, int miliseconds)
 {
 	_seconds = seconds;

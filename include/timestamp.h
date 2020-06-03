@@ -31,6 +31,9 @@ public:
 	const Time & operator+=(const Time & time);
 	const Time & operator-=(const Time & time);
 
+	unsigned int seconds();
+	unsigned int miliseconds();
+
 protected:
 
 	void _set(int seconds, int miliseconds);
