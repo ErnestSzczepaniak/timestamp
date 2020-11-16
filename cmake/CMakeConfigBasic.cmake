@@ -32,15 +32,17 @@ set(dependency_scope            PRIVATE)
 
 set(architecture                v7a)
 set(core                        a9)
-set(gic                         pl390)
+set(gic				            pl390)
 set(family                      c5)
 
 set(board                       de10standard)
 
+set(memory                      dual)
+
 set(sdram_start                 0x00000000)
-set(sdram_size                  1024M)
-set(sdram_size_stack            2M)
-set(sdram_size_pool             512M)
+set(sdram_size                  128M)
+set(sdram_size_stack            4M)
+set(sdram_size_pool             64M)
 
 set(ocram_start                 0xffff0000)
 set(ocram_size                  64K)

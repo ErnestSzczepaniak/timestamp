@@ -263,12 +263,13 @@ unsigned int Timestamp::day()
 
 unsigned int Timestamp::day_of_year()
 {
+	auto temp = *this;
 	unsigned int counter = 0;
-	unsigned int current_year = _to_localtime(*this).year;
+	unsigned int current_year = _to_localtime(temp).year;
 
-	while(_to_localtime(*this).year == current_year)
+	while(_to_localtime(temp).year == current_year)
 	{
-		_seconds -= _seconds_in_day;
+		temp._seconds -= _seconds_in_day;
 		counter++;
 	}
 
